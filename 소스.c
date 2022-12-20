@@ -31,6 +31,26 @@ int main(void) {
 			}
 			else printf("오답입니다. 정답은 %d입니다.\n", Canswer);
 		}
+		else if (a == 2) {
+			printf("[%d/10] %d * %d = ", i, num1, num2);
+			scanf_s("%d", &Panswer);
+			Canswer = num1 * num2;
+			if (Panswer == Canswer) {
+				i++;
+				printf("정답입니다.\n");
+			}
+			else printf("오답입니다. 정답은 %d입니다.\n", Canswer);
+		}
+		else if (a == 3) {
+			printf("[%d/10] %d / %d = ", i, num1, num2);
+			scanf_s("%lf", &k);
+			c = (double)num1 / (double)num2;
+			if (Panswer == Canswer) {
+				i++;
+				printf("정답입니다.\n");
+			}
+			else printf("오답입니다. 정답은 %lf입니다.\n", c);
+		}
 		
 	}
 }
